@@ -15,10 +15,10 @@ export default function Header() {
               </div>
               <div className="flex items-baseline space-x-1.5">
                 <span className="font-bold text-lg text-slate-950 tracking-tight">
-                  PixelShrink
+                  CompressKB
                 </span>
                 <span className="text-[11px] font-mono text-slate-400">
-                  engine
+                  .com
                 </span>
               </div>
             </Link>

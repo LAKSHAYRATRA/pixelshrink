@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://pixelshrink.app/sitemap.xml
+Sitemap: https://thecompresskb.com/sitemap.xml

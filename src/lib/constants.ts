@@ -1,12 +1,12 @@
 import { ToolConfig } from './types';
 
 export const SITE_CONFIG = {
-  name: 'PixelShrink',
-  domain: 'pixelshrink.app',
-  url: 'https://pixelshrink.app',
-  tagline: 'High-Performance, Privacy-First Browser Image Optimizer',
-  author: 'PixelShrink Engineering Team',
-  description: 'Free online image compressor, resizer, and converter. Compress JPG, PNG, and WebP images to exact KB limits directly in your browser with zero server uploads.',
+  name: 'CompressKB',
+  domain: 'thecompresskb.com',
+  url: 'https://thecompresskb.com',
+  tagline: 'High-Performance, Privacy-First In-Browser Image Compressor',
+  author: 'CompressKB Team',
+  description: 'Free online image compressor. Compress JPG, PNG, and WebP images to exact KB limits directly in your browser with zero server uploads.',
 };
 
 export const NAV_TOOLS = [

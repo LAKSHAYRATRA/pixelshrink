@@ -14,11 +14,11 @@ export default function Footer() {
                 P
               </div>
               <span className="font-bold text-base text-white">
-                PixelShrink
+                CompressKB
               </span>
             </Link>
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              PixelShrink is a client-side image utility. All compression, format conversion, and pixel resizing operations are performed locally in your browser using HTML5 Canvas and WebAssembly. No image data is ever uploaded to any server.
+              CompressKB is a client-side image utility. All compression, format conversion, and pixel resizing operations are performed locally in your browser using HTML5 Canvas and WebAssembly. No image data is ever uploaded to any server.
             </p>
             <div className="inline-flex items-center gap-1.5 text-[11px] text-slate-400 bg-slate-800/80 border border-slate-700/80 px-2.5 py-1 rounded">
               <Shield className="w-3 h-3 text-slate-300" />
