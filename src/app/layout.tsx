@@ -42,6 +42,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'google4c9080b08c00f14f',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
