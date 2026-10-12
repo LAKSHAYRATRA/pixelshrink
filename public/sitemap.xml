@@ -1,98 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://thecompresskb.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/compress-image-to-20kb</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/compress-image-to-50kb</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/compress-image-to-100kb</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/compress-image-to-200kb</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/compress-jpg</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/compress-png</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/compress-webp</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/resize-image</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/png-to-jpg</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/jpg-to-png</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/webp-to-jpg</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/guides/how-image-compression-works</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/guides/jpg-vs-png-vs-webp</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/guides/image-size-requirements-government-exams</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/privacy-policy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/terms</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thecompresskb.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+<url>
+<loc>https://www.thecompresskb.com</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/compress-image-to-20kb</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/compress-image-to-50kb</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/compress-image-to-100kb</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/compress-image-to-200kb</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/compress-jpg</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/compress-png</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/compress-webp</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/resize-image</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/png-to-jpg</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/jpg-to-png</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/webp-to-jpg</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/guides/how-image-compression-works</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/guides/jpg-vs-png-vs-webp</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/guides/image-size-requirements-government-exams</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/about</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/privacy-policy</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/terms</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://www.thecompresskb.com/contact</loc>
+<lastmod>2026-10-12T18:25:00.726Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
 </urlset>

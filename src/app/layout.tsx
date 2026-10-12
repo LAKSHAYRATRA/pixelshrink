@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     default: `${SITE_CONFIG.name} - In-Browser Image Compressor & Optimizer`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
+  alternates: {
+    canonical: '/',
+  },
   description: SITE_CONFIG.description,
   icons: {
     icon: '/icon.svg',
@@ -68,7 +71,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="canonical" href={SITE_CONFIG.url} />
         <meta name="theme-color" content="#0f172a" />
       </head>
       <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-slate-800 selection:text-white antialiased">

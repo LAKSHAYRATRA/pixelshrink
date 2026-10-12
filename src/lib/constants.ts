@@ -2,8 +2,8 @@ import { ToolConfig } from './types';
 
 export const SITE_CONFIG = {
   name: 'CompressKB',
-  domain: 'thecompresskb.com',
-  url: 'https://thecompresskb.com',
+  domain: 'www.thecompresskb.com',
+  url: 'https://www.thecompresskb.com',
   tagline: 'High-Performance, Privacy-First In-Browser Image Compressor',
   author: 'CompressKB Team',
   description: 'Free online image compressor. Compress JPG, PNG, and WebP images to exact KB limits directly in your browser with zero server uploads.',
