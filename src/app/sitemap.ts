@@ -4,7 +4,7 @@ import { ALL_TOOLS, NAV_GUIDES, SITE_CONFIG } from '../lib/constants';
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date().toISOString();
 
-  // Root Homepage
+  // Root Homepage (English)
   const routes: MetadataRoute.Sitemap = [
     {
       url: SITE_CONFIG.url,
@@ -13,6 +13,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
   ];
+
+  // Multilingual Homepages (Spanish, German, French, Portuguese, Italian)
+  ['es', 'de', 'fr', 'pt', 'it'].forEach((lang) => {
+    routes.push({
+      url: `${SITE_CONFIG.url}/${lang}`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    });
+  });
 
   // All 11 dedicated tool pages
   ALL_TOOLS.filter((t) => t.slug !== '').forEach((tool) => {

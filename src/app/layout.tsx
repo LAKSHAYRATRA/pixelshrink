@@ -12,6 +12,15 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/',
+    languages: {
+      'en': '/',
+      'es': '/es',
+      'de': '/de',
+      'fr': '/fr',
+      'pt': '/pt',
+      'it': '/it',
+      'x-default': '/',
+    },
   },
   description: SITE_CONFIG.description,
   icons: {

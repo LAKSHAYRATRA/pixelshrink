@@ -136,6 +136,22 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Language Quick Switcher */}
+        <div className="py-4 border-b border-slate-800 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-400">
+          <span className="font-semibold text-slate-300">Languages:</span>
+          <Link href="/" className="hover:text-white transition-colors">English</Link>
+          <span>•</span>
+          <Link href="/es" className="hover:text-white transition-colors" hrefLang="es">Español</Link>
+          <span>•</span>
+          <Link href="/de" className="hover:text-white transition-colors" hrefLang="de">Deutsch</Link>
+          <span>•</span>
+          <Link href="/fr" className="hover:text-white transition-colors" hrefLang="fr">Français</Link>
+          <span>•</span>
+          <Link href="/pt" className="hover:text-white transition-colors" hrefLang="pt">Português</Link>
+          <span>•</span>
+          <Link href="/it" className="hover:text-white transition-colors" hrefLang="it">Italiano</Link>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 gap-3">
           <p>© {new Date().getFullYear()} {SITE_CONFIG.name}. Processed locally in user browser.</p>
