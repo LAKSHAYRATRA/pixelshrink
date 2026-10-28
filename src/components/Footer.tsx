@@ -1,15 +1,26 @@
+'use client';
+
 import Link from 'next/link';
-import { NAV_GUIDES, SITE_CONFIG } from '../lib/constants';
+import { usePathname } from 'next/navigation';
+import { SITE_CONFIG } from '../lib/constants';
 import { Shield } from 'lucide-react';
+import { getLocaleFromPath, LOCALES } from '../lib/i18n/types';
+import { UI_TRANSLATIONS } from '../lib/i18n/translations';
 
 export default function Footer() {
+  const pathname = usePathname();
+  const locale = getLocaleFromPath(pathname || '');
+  const t = UI_TRANSLATIONS[locale].footer;
+  const headerT = UI_TRANSLATIONS[locale].header;
+  const homeHref = locale === 'en' ? '/' : `/${locale}`;
+
   return (
     <footer className="bg-slate-900 text-slate-400 pt-12 pb-10 border-t border-slate-800 text-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-slate-800">
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-3">
-            <Link href="/" className="flex items-center space-x-2 text-white">
+            <Link href={homeHref} className="flex items-center space-x-2 text-white">
               <div className="w-7 h-7 rounded-md bg-slate-800 border border-slate-700 flex items-center justify-center text-white font-mono font-bold text-xs">
                 P
               </div>
@@ -18,43 +29,43 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              CompressKB is a client-side image utility. All compression, format conversion, and pixel resizing operations are performed locally in your browser using HTML5 Canvas and WebAssembly. No image data is ever uploaded to any server.
+              {t.description}
             </p>
             <div className="inline-flex items-center gap-1.5 text-[11px] text-slate-400 bg-slate-800/80 border border-slate-700/80 px-2.5 py-1 rounded">
               <Shield className="w-3 h-3 text-slate-300" />
-              <span>Zero upload transmission - Offline capable</span>
+              <span>{t.shieldBadge}</span>
             </div>
           </div>
 
           {/* Quick Tools */}
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-3">
-              Compressors
+              {t.compressorsHeading}
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="hover:text-slate-200 transition-colors">
-                  Universal Compressor
+                <Link href={homeHref} className="hover:text-slate-200 transition-colors">
+                  {t.universalCompressor}
                 </Link>
               </li>
               <li>
                 <Link href="/compress-jpg" className="hover:text-slate-200 transition-colors">
-                  Compress JPG
+                  {t.compressJpg}
                 </Link>
               </li>
               <li>
                 <Link href="/compress-png" className="hover:text-slate-200 transition-colors">
-                  Compress PNG
+                  {t.compressPng}
                 </Link>
               </li>
               <li>
                 <Link href="/compress-webp" className="hover:text-slate-200 transition-colors">
-                  Compress WebP
+                  {t.compressWebp}
                 </Link>
               </li>
               <li>
                 <Link href="/resize-image" className="hover:text-slate-200 transition-colors">
-                  Resize Dimensions
+                  {t.resizeDimensions}
                 </Link>
               </li>
             </ul>
@@ -63,37 +74,37 @@ export default function Footer() {
           {/* Target KB Tools */}
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-3">
-              Exact Size Portals
+              {t.targetsHeading}
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/compress-image-to-20kb" className="hover:text-slate-200 transition-colors">
-                  Compress to 20 KB (Signatures)
+                  {t.kb20Link}
                 </Link>
               </li>
               <li>
                 <Link href="/compress-image-to-50kb" className="hover:text-slate-200 transition-colors">
-                  Compress to 50 KB (Passport/SSC)
+                  {t.kb50Link}
                 </Link>
               </li>
               <li>
                 <Link href="/compress-image-to-100kb" className="hover:text-slate-200 transition-colors">
-                  Compress to 100 KB (UPSC/Forms)
+                  {t.kb100Link}
                 </Link>
               </li>
               <li>
                 <Link href="/compress-image-to-200kb" className="hover:text-slate-200 transition-colors">
-                  Compress to 200 KB (General)
+                  {t.kb200Link}
                 </Link>
               </li>
               <li>
                 <Link href="/png-to-jpg" className="hover:text-slate-200 transition-colors">
-                  PNG to JPG Converter
+                  {t.pngToJpgLink}
                 </Link>
               </li>
               <li>
                 <Link href="/webp-to-jpg" className="hover:text-slate-200 transition-colors">
-                  WebP to JPG Converter
+                  {t.webpToJpgLink}
                 </Link>
               </li>
             </ul>
@@ -102,34 +113,42 @@ export default function Footer() {
           {/* Guides & Trust Pages */}
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-3">
-              Documentation
+              {t.documentationHeading}
             </h3>
             <ul className="space-y-2">
-              {NAV_GUIDES.map((g) => (
-                <li key={g.href}>
-                  <Link href={g.href} className="hover:text-slate-200 transition-colors">
-                    {g.name}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/guides/how-image-compression-works" className="hover:text-slate-200 transition-colors">
+                  {headerT.guidesMenu.howCompressionWorks}
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides/jpg-vs-png-vs-webp" className="hover:text-slate-200 transition-colors">
+                  {headerT.guidesMenu.formatComparison}
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides/image-size-requirements-government-exams" className="hover:text-slate-200 transition-colors">
+                  {headerT.guidesMenu.governmentRequirements}
+                </Link>
+              </li>
               <li className="pt-2 border-t border-slate-800">
                 <Link href="/about" className="hover:text-slate-200 transition-colors">
-                  About
+                  {t.about}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-slate-200 transition-colors">
-                  Contact
+                  {t.contact}
                 </Link>
               </li>
               <li>
                 <Link href="/privacy-policy" className="hover:text-slate-200 transition-colors">
-                  Privacy Policy
+                  {t.privacy}
                 </Link>
               </li>
               <li>
                 <Link href="/terms" className="hover:text-slate-200 transition-colors">
-                  Terms of Service
+                  {t.terms}
                 </Link>
               </li>
             </ul>
@@ -138,25 +157,30 @@ export default function Footer() {
 
         {/* Language Quick Switcher */}
         <div className="py-4 border-b border-slate-800 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-400">
-          <span className="font-semibold text-slate-300">Languages:</span>
-          <Link href="/" className="hover:text-white transition-colors">English</Link>
-          <span>•</span>
-          <Link href="/es" className="hover:text-white transition-colors" hrefLang="es">Español</Link>
-          <span>•</span>
-          <Link href="/de" className="hover:text-white transition-colors" hrefLang="de">Deutsch</Link>
-          <span>•</span>
-          <Link href="/fr" className="hover:text-white transition-colors" hrefLang="fr">Français</Link>
-          <span>•</span>
-          <Link href="/pt" className="hover:text-white transition-colors" hrefLang="pt">Português</Link>
-          <span>•</span>
-          <Link href="/it" className="hover:text-white transition-colors" hrefLang="it">Italiano</Link>
+          <span className="font-semibold text-slate-300">{t.languagesLabel}</span>
+          {Object.values(LOCALES).map((loc, idx) => (
+            <span key={loc.code} className="inline-flex items-center gap-2">
+              <Link
+                href={loc.prefix || '/'}
+                hrefLang={loc.hrefLang}
+                className={`transition-colors ${
+                  locale === loc.code
+                    ? 'text-white font-bold underline underline-offset-4'
+                    : 'hover:text-white text-slate-400'
+                }`}
+              >
+                {loc.flag} {loc.nativeName}
+              </Link>
+              {idx < Object.values(LOCALES).length - 1 && <span className="text-slate-600">•</span>}
+            </span>
+          ))}
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 gap-3">
-          <p>© {new Date().getFullYear()} {SITE_CONFIG.name}. Processed locally in user browser.</p>
+          <p>© {new Date().getFullYear()} {SITE_CONFIG.name}. {t.rights}</p>
           <p className="font-mono text-[11px]">
-            HTML5 Canvas • WebAssembly • Zero Remote Storage
+            {t.privacyNote}
           </p>
         </div>
       </div>
